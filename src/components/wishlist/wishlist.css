@@ -20,3 +20,17 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+.list_button{
+  width: 199px;
+  height: 43px;
+  cursor: pointer;
+  margin-top: 7px;
+  font-weight: bolder;
+
+}
+
+.list_button:hover{
+  background-color: black;
+  color: white;
+}
