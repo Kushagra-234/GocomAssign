@@ -16,21 +16,22 @@ const initialData = {
   singleitem: {},
   cart: [],
   bag:[],
+  
 };
 
 const Cart = createContext(initialData);
 
-const getLocalData = () => {
-  let newCartData = localStorage.getItem("bag");
+// const getLocalData = () => {
+//   let newCartData = localStorage.getItem("bag");
 
-  if (newCartData === []) {
-    return [];
-  }
+//   if (newCartData === []) {
+//     return [];
+//   }
 
-  else{
-    return JSON.parse(newCartData);
-  }
-};
+//   else{
+//     return JSON.parse(newCartData);
+//   }
+// };
 
 // this cart now contains all data
 
@@ -40,7 +41,7 @@ const Context = ({ children }) => {
   const [state, dispatch] = useReducer(CartReducer, {
     products: data,
     cart: [],
-    bag: getLocalData(),
+    bag:[],
     gender: [],
     brand: [],
     price: "",
@@ -49,9 +50,9 @@ const Context = ({ children }) => {
     singleitem: "",
   });
 
-  useEffect(() => {
-    localStorage.setItem("bag", JSON.stringify(state.bag));
-  }, [state.bag]);
+  // useEffect(() => {
+  //   localStorage.setItem("bag", JSON.stringify(state.bag));
+  // }, [state.bag]);
 
   return <Cart.Provider value={{ state, dispatch }}>{children}</Cart.Provider>;
 };
