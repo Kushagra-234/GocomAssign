@@ -110,7 +110,7 @@ const ProductList = () => {
         <div className="list_filter">
           <div className="list_content1">
             <span className="list_contentspan1">Filters</span>
-            <span className="list_contentspan2">Clear Filters</span>
+            <button className="list_contentspan2">Clear Filters</button>
           </div>
 
           <div className="list_filtercontainer">
