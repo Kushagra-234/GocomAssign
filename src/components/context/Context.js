@@ -25,7 +25,7 @@ const initialData = {
   search: "enter",
   singleitem: {},
   cart: [],
-  // bag:getLocaldata(),
+  bag:getLocaldata(),
   
 };
 
