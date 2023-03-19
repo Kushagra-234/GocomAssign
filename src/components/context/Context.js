@@ -6,6 +6,16 @@ import CartReducer from "./Reducer";
 
 // phase 1
 // creation
+const getLocaldata = () => {
+  let newdata = localStorage.getItem("bag");
+  if (newdata === []) {
+    return [];
+  } else {
+    return JSON.parse(newdata);
+  }
+};
+
+
 const initialData = {
   products: data,
 
@@ -15,7 +25,7 @@ const initialData = {
   search: "enter",
   singleitem: {},
   cart: [],
-  bag:[],
+  // bag:getLocaldata(),
   
 };
 
@@ -38,10 +48,14 @@ const Cart = createContext(initialData);
 // provider function to wrap our app(children)
 
 const Context = ({ children }) => {
+
+
+  
+
   const [state, dispatch] = useReducer(CartReducer, {
     products: data,
     cart: [],
-    bag:[],
+    bag:getLocaldata(),
     gender: [],
     brand: [],
     price: "",
@@ -49,6 +63,10 @@ const Context = ({ children }) => {
     search: [],
     singleitem: "",
   });
+
+  useEffect(()=>{
+    localStorage.setItem("bag",JSON.stringify(state.bag));
+  },[state.bag]);
 
   // useEffect(() => {
   //   localStorage.setItem("bag", JSON.stringify(state.bag));
