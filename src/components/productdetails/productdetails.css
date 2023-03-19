@@ -109,6 +109,7 @@
 
 .productdetails_img1:hover{
   transform: scale(1.5);
+  cursor: zoom-in;
 }
 
 
@@ -117,6 +118,7 @@
 @media only screen and (max-width: 800px) {
   .product_details{
     flex-direction: column;
+    
   }
 
   /* .details_btn{
