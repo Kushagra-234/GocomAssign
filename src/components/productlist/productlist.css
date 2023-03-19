@@ -1,0 +1,84 @@
+.product_list {
+  /* margin-top: 30px; */
+  display: flex;
+}
+
+.list_filter {
+  margin-top: 30px;
+  flex: 0.25;
+  border-right: 1px solid rgb(226, 222, 222);
+  height: 100vh;
+}
+
+.list_cards {
+  flex: 0.75;
+  margin-top: 30px;
+  margin-left: 20px;
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  /* width: 430px; */
+  width: 30px;
+  height: 100vh;
+}
+
+.list_contentspan2 {
+  float: right;
+  margin-right: 10px;
+  color: green;
+  font-weight: bolder;
+}
+
+.list_contentspan1 {
+  margin-left: 8px;
+  font-weight: bolder;
+  color: green;
+}
+
+.list_content1 {
+  border-bottom: 1px solid rgb(226, 222, 222);
+  padding-bottom: 9px;
+  /* margin-top: 3px; */
+  margin-bottom: 5px;
+}
+
+.list_filtercontainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.list_gender {
+  border-bottom: 1px solid rgb(226, 222, 222);
+  margin-top: 5px;
+  padding-bottom: 3px;
+}
+
+.list_price {
+  border-bottom: 1px solid rgb(226, 222, 222);
+  margin-top: 10px;
+  padding-bottom: 3px;
+}
+
+.list_size {
+  border-bottom: 1px solid rgb(226, 222, 222);
+  margin-top: 10px;
+  padding-bottom: 3px;
+}
+
+.list_sort {
+  border-bottom: 1px dolid rgb(226, 222, 222);
+}
+
+/* prices */
+
+/* size */
+
+/* sort */
+
+/* responsive design */
+
+@media only screen and (max-width: 800px) {
+  .list_content1 {
+    display: none;
+  }
+}

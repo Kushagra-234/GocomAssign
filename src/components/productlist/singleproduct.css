@@ -1,0 +1,57 @@
+.list_cardcontent {
+  transition: 450ms;
+  /* padding:10px; */
+  margin: 10px;
+  margin-left: 46px;
+  max-width: 350px;
+  width: 200px;
+  height: 390px;
+  border: 1px solid rgb(163, 158, 158);
+}
+
+.list_cardcontent:hover {
+  transform: scale(1.03);
+}
+
+.img {
+  object-fit: contain;
+  max-width: 100%;
+}
+
+.list_cardname {
+  margin-left: 7px;
+  margin-top: 7px;
+  font-size: 14px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+}
+
+.list_carddes {
+  margin-top: 7px;
+  margin-left: 7px;
+  letter-spacing: 1px;
+  color: gray;
+  font-size: 11px;
+}
+
+.list_pricing {
+  margin-top: 9px;
+  margin-left: 7px;
+  letter-spacing: 0.6px;
+  font-weight: bolder;
+  color: blue;
+}
+
+.list_btn {
+  width: 100%;
+  margin-top: 9px;
+  height: 42px;
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+}
+
+.list_btn:hover {
+  background-color: green;
+  color: white;
+}

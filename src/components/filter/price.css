@@ -1,0 +1,51 @@
+
+/* price tag styling */
+
+.price_heading {
+  margin-top: 11px;
+  margin-left: 9px;
+    color: rgb(5, 0, 0);
+
+}
+
+.price_input {
+  margin: 8px;
+  letter-spacing: 1px;
+}
+
+.price_list {
+  margin-top: 4px;
+}
+
+/* responsiveness */
+
+@media only screen and (max-width: 500px) {
+  .price_label{
+    font-size: 10px;
+  }
+
+  .price_heading{
+    font-size: 12px;
+  }
+
+  .price_input{
+    margin: 6px;
+  }
+}
+
+@media only screen and (max-width:800px){
+  .price_heading{
+    font-size: 13px ;
+  }
+
+  .price_label{
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width:500px){
+  .price_label{
+    font-size: 10px;
+
+  }
+}

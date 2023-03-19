@@ -1,0 +1,22 @@
+.product_wishlist {
+  margin-left: 5px;
+}
+
+.product_headingcont {
+  width: 100%;
+  height: 30vh;
+  font-weight: bolder;
+  font-size: 27px;
+  flex-direction: column;
+  display: flex;
+  margin-left: 10px;
+  justify-content: center;
+  align-items: center;
+  color: green;
+}
+
+.product_wishcards{
+    margin-left: 7px;
+    display: flex;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,36 @@
+
+/* size fiter styling */
+
+
+.size_heading {
+  margin-top: 11px;
+  margin-left: 9px;
+    color: rgb(5, 0, 0);
+
+}
+
+.size_list {
+  margin-top: 4px;
+}
+
+.size_input {
+  margin: 8px;
+  letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 800px) {
+  .size_heading{
+    font-size: 12px;
+  }
+  .brand_label{
+    font-size: 13px;
+
+  }
+
+}
+
+@media only screen and (max-width:500px){
+  .brand_label{
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,30 @@
+.gender_heading {
+  margin-top: 11px;
+  margin-left: 9px;
+  color: rgb(5, 0, 0);
+}
+
+.gender_list {
+  margin-top: 4px;
+}
+
+.gender_input {
+  margin: 6px;
+  letter-spacing: 1px;
+}
+
+
+@media only screen and (max-width: 800px) {
+  .gender_heading{
+    font-size: 12px;
+  }
+
+  .gender_label{
+    font-size: 12px;
+  }
+
+  .gender_input{
+    font-size: 7px;
+
+  }
+}

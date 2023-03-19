@@ -1,0 +1,124 @@
+.header{
+    display: flex;
+    align-items: center;
+    margin-top: 4px;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    margin-left: 25px;
+    border-bottom: 1px solid rgb(213,213,213);
+}
+
+.header_heading{
+    flex: 0.3;
+    color: blue;
+}
+
+.header_search{
+    flex: 0.4;
+    
+    
+}
+
+.header_input{
+    width: 490px;
+    height: 30px;
+   
+    border: none;
+    outline: none;
+     border: 1px solid transparent;
+    box-shadow: 2px 2px 2px 2px  rgb(213,213,213);
+
+}
+
+.header_icons{
+    flex: 0.3;
+    float: right;
+    
+    
+}
+
+.icons{
+    margin-right: 40px;
+    /* padding-right: 5px; */
+    cursor: pointer;
+    float: right;
+
+    
+}
+
+.icons:hover{
+    color: blue;
+}
+
+.header_btn{
+    border: none;
+    cursor: pointer;
+      border: 1px solid transparent;
+    box-shadow: 2px 2px 2px 2px  rgb(213,213,213);
+    height: 30px;
+    width: 70px;
+}
+
+
+.header_btn:hover{
+    background-color: turquoise;
+}
+
+.bag_cont{
+    display: flex;
+    margin-top: 7px;
+    justify-content: space-between;
+}
+
+.bag_img{
+    width: 70px;
+    height: 70px;
+    margin-left: 4px;
+    margin-right: 34px;
+}
+
+.bag_branddesc{
+    margin-left: 10px;
+
+}
+
+.bag_price{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.bag_btn{
+    margin-left: 15px;
+    margin-top: 10px;
+    height: 20px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+.bag_btn:hover{
+    background-color: white;
+    color: gray;
+}
+
+
+
+@media only screen and (max-width: 1400px) {
+    .header_heading{
+        display: none;
+
+    }
+
+    .header_btn{
+        display: none;
+    }
+
+    .header_input{
+        width: 250px;
+    }
+
+ 
+    
+  
+}
