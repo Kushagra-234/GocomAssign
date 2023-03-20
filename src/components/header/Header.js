@@ -4,11 +4,12 @@ import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import ShoppingBagIcon from "@mui/icons-material/ShoppingBag";
 import { Link } from "react-router-dom";
 import { CartState } from "../context/Context";
-import "../bagmodal/bag.css"
+import "../bagmodal/bag.css";
 
 const Header = ({ setfun }) => {
   const {
-    state: { bag },dispatch
+    state: { bag },
+    dispatch,
   } = CartState();
 
   console.log(bag);
@@ -56,6 +57,7 @@ const Header = ({ setfun }) => {
         </Link>
 
         <ShoppingBagIcon className="icons" onClick={toggleModal} />
+        <div className="cart_length">{bag.length}</div>
         {modal && (
           <div className="modal">
             <div onClick={toggleModal} className="overlay"></div>
@@ -63,34 +65,29 @@ const Header = ({ setfun }) => {
               <h2>Cart items</h2>
               {bag.length > 0 ? (
                 <>
-                {bag.map((item)=>{
-
-                   return (
-                     <div className="bag_cont">
-                       <img src={item.img} className="bag_img" />
-                       <div className="bag_brandanddesc">
-                         <p>{item.brand}</p>
-                         <p>{item.pname}</p>
-                       </div>
-                       <div className="bag_price">${item.price}</div>
-                       <button
-                         className="bag_btn"
-                         onClick={() => {
-                           dispatch({
-                             type: "REMOVEFROMBAG",
-                             payload: item,
-                           });
-                         }}
-                       >
-                         Remove item
-                       </button>
-                     </div>
-                   );
-
-                })}
-                 
-                 
-                  
+                  {bag.map((item) => {
+                    return (
+                      <div className="bag_cont">
+                        <img src={item.img} className="bag_img" />
+                        <div className="bag_brandanddesc">
+                          <p>{item.brand}</p>
+                          <p>{item.pname}</p>
+                        </div>
+                        <div className="bag_price">${item.price}</div>
+                        <button
+                          className="bag_btn"
+                          onClick={() => {
+                            dispatch({
+                              type: "REMOVEFROMBAG",
+                              payload: item,
+                            });
+                          }}
+                        >
+                          Remove item
+                        </button>
+                      </div>
+                    );
+                  })}
                 </>
               ) : (
                 <>

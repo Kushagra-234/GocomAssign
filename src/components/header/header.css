@@ -43,6 +43,7 @@
     /* padding-right: 5px; */
     cursor: pointer;
     float: right;
+    /* color: blue; */
 
     
 }
@@ -100,6 +101,12 @@
 .bag_btn:hover{
     background-color: white;
     color: gray;
+}
+
+.cart_length{
+    float: right;
+    margin-top: 1px;
+    font-size: 21px;
 }
 
 
