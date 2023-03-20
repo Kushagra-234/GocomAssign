@@ -5,27 +5,22 @@ import "./singleproduct.css";
 import { CartState } from "../context/Context";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 
-
-const SingleProduct = ({ item,key }) => {
-  const {state:{cart},dispatch}=CartState();
+const SingleProduct = ({ item, key }) => {
+  const {
+    state: { cart },
+    dispatch,
+  } = CartState();
   // console.log(state);
 
-  const handleSingle=(item)=>{
+  const handleSingle = (item) => {
     // console.log(item.id);
     dispatch({
       type: "SINGLEPRODUCT",
       payload: item.id,
     });
-    
+  };
 
-    
-    
-  }
-
-
-      // console.log(cart);
-
-
+  // console.log(cart);
 
   // const handleWish=(item)=>{
 
@@ -35,8 +30,7 @@ const SingleProduct = ({ item,key }) => {
   //      type: "WISHPROD",
   //      payload: item.id,
   //    });
-   
-    
+
   // }
 
   return (
@@ -55,40 +49,35 @@ const SingleProduct = ({ item,key }) => {
       <div className="list_carddes">{item.pname}</div>
 
       <div className="list_pricing">${item.price}</div>
-      < div className="btnandicon">
-      {cart.some((p) => p.id === item.id) ? (
-        <button
-          onClick={() => {
-            dispatch({
-              type: "REMOVETOCART",
-              payload: item,
-            });
-          }}
-          className="list_btn"
-        >
-          Remove From Wishlist
-        </button>
-      ) : (
-        <button
-          
-          className="list_btn"
-          onClick={() => {
-            dispatch({
-              type: "ADDTOCART",
-              payload: item,
-            });
-          }}
-        >
-          Add to Wishlist
-          <FavoriteBorderIcon style={{
-            color:"pink",
-            //  paddingTop:"3px"
-
-          }}/>
-          
-        </button>
-      )}
-    </div>
+      <div className="  ">
+        {cart.some((p) => p.id === item.id) ? (
+          <button
+            onClick={() => {
+              dispatch({
+                type: "REMOVETOCART",
+                payload: item,
+              });
+            }}
+            className="list_btn"
+          >
+            Remove From Wishlist
+          </button>
+        ) : (
+          <button
+            className="list_btn"
+            onClick={() => {
+              dispatch({
+                type: "ADDTOCART",
+                payload: item,
+              });
+            }}
+          >
+            Add to Wishlist
+            
+            
+          </button>
+        )}
+      </div>
     </div>
   );
 };
