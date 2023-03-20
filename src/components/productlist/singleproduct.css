@@ -55,3 +55,9 @@
   background-color: green;
   color: white;
 }
+
+.btnandicon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

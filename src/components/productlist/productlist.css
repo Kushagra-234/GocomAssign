@@ -81,4 +81,12 @@
   .list_content1 {
     display: none;
   }
+
+  .list_cards{
+    overflow: scroll;
+  }
+
+  ::-webkit-scrollbar{
+    display: none;
+  }
 }

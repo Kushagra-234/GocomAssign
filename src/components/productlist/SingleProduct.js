@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 // import "./productlist.css";
 import "./singleproduct.css";
 import { CartState } from "../context/Context";
+import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+
 
 const SingleProduct = ({ item,key }) => {
   const {state:{cart},dispatch}=CartState();
@@ -53,6 +55,7 @@ const SingleProduct = ({ item,key }) => {
       <div className="list_carddes">{item.pname}</div>
 
       <div className="list_pricing">${item.price}</div>
+      < div className="btnandicon">
       {cart.some((p) => p.id === item.id) ? (
         <button
           onClick={() => {
@@ -67,6 +70,7 @@ const SingleProduct = ({ item,key }) => {
         </button>
       ) : (
         <button
+          
           className="list_btn"
           onClick={() => {
             dispatch({
@@ -76,8 +80,15 @@ const SingleProduct = ({ item,key }) => {
           }}
         >
           Add to Wishlist
+          <FavoriteBorderIcon style={{
+            color:"pink",
+            //  paddingTop:"3px"
+
+          }}/>
+          
         </button>
       )}
+    </div>
     </div>
   );
 };
