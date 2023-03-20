@@ -23,6 +23,8 @@ Add to wishlist and remove from wishlist functionality as mentioned
 
 ![gocom](https://user-images.githubusercontent.com/100445287/226275614-8f87508e-7e20-4038-a555-1f18ca471ce2.png)
 
+
+
 ![Gocom2](https://user-images.githubusercontent.com/100445287/226276433-db49da4d-111a-4e05-8d51-0c304cf166a4.png)
 
 
