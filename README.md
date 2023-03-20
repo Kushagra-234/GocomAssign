@@ -21,9 +21,9 @@ full-text search functionality
 Add to wishlist and remove from wishlist functionality as mentioned 
 
 
-![Cartimage1](https://user-images.githubusercontent.com/100445287/226180805-b427ae2c-47ee-4406-aea3-290a643959a7.png)
+![gocom](https://user-images.githubusercontent.com/100445287/226275614-8f87508e-7e20-4038-a555-1f18ca471ce2.png)
 
-![cartimage2](https://user-images.githubusercontent.com/100445287/226181031-d5048237-09d4-464a-8f95-d5e42364d2b0.png)
+![Gocom2](https://user-images.githubusercontent.com/100445287/226276433-db49da4d-111a-4e05-8d51-0c304cf166a4.png)
 
 
 
