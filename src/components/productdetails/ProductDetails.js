@@ -65,6 +65,18 @@ const ProductDetails = () => {
                     >
                       ADD TO BAG
                     </button>
+                     <button
+                      className="cart_btn2"
+                      onClick={() => {
+                        // alert("product added to b")
+                        dispatch({
+                          type: "ADDTOCART",
+                          payload: product,
+                        });
+                      }}
+                    >
+                      ADD TO Wishlist
+                      </button>
                   </div>
                 </div>
               </div>

@@ -87,8 +87,8 @@
 
 .cart_btn {
   cursor: pointer;
-  width: 120px;
-  height: 23px;
+  width: 130px;
+  height: 27px;
   font-weight: bolder;
 }
 
@@ -110,6 +110,19 @@
 .productdetails_img1:hover{
   transform: scale(1.5);
   cursor: zoom-in;
+}
+
+.cart_btn2{
+  margin-left: 29px;
+  width: 130px;
+  height: 25px;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+.cart_btn2:hover {
+  background-color: black;
+  color: white;
 }
 
 
